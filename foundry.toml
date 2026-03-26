@@ -1,0 +1,15 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+evm_version = "shanghai"
+
+# Original attack date: 2026-03-21
+# Uses local mocks by default (no RPC needed).
+# To fork mainnet, uncomment and set:
+# [profile.fork]
+# eth_rpc_url = "https://eth-mainnet.g.alchemy.com/v2/YOUR_KEY"
+# fork_block_number = 25100000
+
+[fuzz]
+runs = 256
